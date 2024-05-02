@@ -1,0 +1,770 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>X Ray Chess</title>
+    <link rel="icon" href="./img/icon.jpg" />
+    <link rel="stylesheet" type="text/css" href="./css/semantic.min.css" />
+    <link rel="stylesheet" href="./css/chessboard-1.0.0.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+      integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!--- Begin Example HTML ------------------------------------------------------>
+    <div
+      id="myBoard"
+      style="width: 60vh; margin: auto; margin-top: 10px; margin-bottom: 10px"
+    >
+      <div class="chessboard-63f37">
+        <div class="board-b72b1" style="width: 392px">
+          <div class="row-5277c">
+            <div
+              class="square-55d63 white-1e1d7 square-a8"
+              style="width: 49px; height: 49px"
+              id="a8-790f-2d37-dc9e-081f-45ae-c294-2f4f-2f6c"
+              data-square="a8"
+            >
+              <div class="notation-322f9 numeric-fc462">8</div>
+              <img
+                src="img/chesspieces/wikipedia/bR.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bR"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-b8"
+              style="width: 49px; height: 49px"
+              id="b8-f97f-107c-c58e-7010-5509-bf6b-bcfa-628a"
+              data-square="b8"
+            >
+              <img
+                src="img/chesspieces/wikipedia/bN.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bN"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-c8"
+              style="width: 49px; height: 49px"
+              id="c8-5e0d-fb2a-c92f-7d3c-4766-d961-cd44-4e0d"
+              data-square="c8"
+            >
+              <img
+                src="img/chesspieces/wikipedia/bB.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bB"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-d8"
+              style="width: 49px; height: 49px"
+              id="d8-160e-17a8-0d3d-485f-18ff-2bfc-3f9e-e57c"
+              data-square="d8"
+            >
+              <img
+                src="img/chesspieces/wikipedia/bQ.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bQ"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-e8"
+              style="width: 49px; height: 49px"
+              id="e8-3f7b-7188-755b-5995-a3a2-cb62-ed86-685c"
+              data-square="e8"
+            >
+              <img
+                src="img/chesspieces/wikipedia/bK.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bK"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-f8"
+              style="width: 49px; height: 49px"
+              id="f8-17e4-47c5-eb90-6737-b480-9004-26dd-a591"
+              data-square="f8"
+            >
+              <img
+                src="img/chesspieces/wikipedia/bB.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bB"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-g8"
+              style="width: 49px; height: 49px"
+              id="g8-3527-9715-2a49-7911-7709-07a4-a912-69d8"
+              data-square="g8"
+            >
+              <img
+                src="img/chesspieces/wikipedia/bN.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bN"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-h8"
+              style="width: 49px; height: 49px"
+              id="h8-f5e6-b534-3de4-6730-83b5-75f1-efa7-4927"
+              data-square="h8"
+            >
+              <img
+                src="img/chesspieces/wikipedia/bR.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bR"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div class="clearfix-7da63"></div>
+          </div>
+          <div class="row-5277c">
+            <div
+              class="square-55d63 black-3c85d square-a7"
+              style="width: 49px; height: 49px"
+              id="a7-b677-3202-8842-38d8-aaae-b8ec-214d-b2a3"
+              data-square="a7"
+            >
+              <div class="notation-322f9 numeric-fc462">7</div>
+              <img
+                src="img/chesspieces/wikipedia/bP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-b7"
+              style="width: 49px; height: 49px"
+              id="b7-58b0-076d-a32d-0ff9-c339-7b37-3cf3-f2a5"
+              data-square="b7"
+            >
+              <img
+                src="img/chesspieces/wikipedia/bP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-c7"
+              style="width: 49px; height: 49px"
+              id="c7-64f9-4c9e-9c8a-2fae-2da9-7990-0783-4fef"
+              data-square="c7"
+            >
+              <img
+                src="img/chesspieces/wikipedia/bP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-d7"
+              style="width: 49px; height: 49px"
+              id="d7-b21f-baf6-7c0a-938d-e436-0903-bf3f-dbe1"
+              data-square="d7"
+            >
+              <img
+                src="img/chesspieces/wikipedia/bP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-e7"
+              style="width: 49px; height: 49px"
+              id="e7-04cc-10be-e081-4d99-4018-9426-963f-84b3"
+              data-square="e7"
+            >
+              <img
+                src="img/chesspieces/wikipedia/bP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-f7"
+              style="width: 49px; height: 49px"
+              id="f7-1627-99fe-9f6d-d2a1-8649-0435-3229-53c4"
+              data-square="f7"
+            >
+              <img
+                src="img/chesspieces/wikipedia/bP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-g7"
+              style="width: 49px; height: 49px"
+              id="g7-8813-a4a3-67bb-4772-e9b7-a61d-a911-83ec"
+              data-square="g7"
+            >
+              <img
+                src="img/chesspieces/wikipedia/bP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-h7"
+              style="width: 49px; height: 49px"
+              id="h7-c8a6-cee8-ac4e-eeaf-7721-6188-c37a-8e15"
+              data-square="h7"
+            >
+              <img
+                src="img/chesspieces/wikipedia/bP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="bP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div class="clearfix-7da63"></div>
+          </div>
+          <div class="row-5277c">
+            <div
+              class="square-55d63 white-1e1d7 square-a6"
+              style="width: 49px; height: 49px"
+              id="a6-d776-23d0-d175-a9d2-d8d1-7be5-94d5-c3b5"
+              data-square="a6"
+            >
+              <div class="notation-322f9 numeric-fc462">6</div>
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-b6"
+              style="width: 49px; height: 49px"
+              id="b6-429d-118a-1aa6-85f9-6825-3ee7-7e4e-9974"
+              data-square="b6"
+            ></div>
+            <div
+              class="square-55d63 white-1e1d7 square-c6"
+              style="width: 49px; height: 49px"
+              id="c6-6bb9-dc1d-1fb2-0cd2-f275-3393-ee82-1cc1"
+              data-square="c6"
+            ></div>
+            <div
+              class="square-55d63 black-3c85d square-d6"
+              style="width: 49px; height: 49px"
+              id="d6-f44e-b774-eabc-6375-4204-8acf-2df4-bfd7"
+              data-square="d6"
+            ></div>
+            <div
+              class="square-55d63 white-1e1d7 square-e6"
+              style="width: 49px; height: 49px"
+              id="e6-97f8-59db-fd81-b928-f3f6-2a7d-1e8d-d6f4"
+              data-square="e6"
+            ></div>
+            <div
+              class="square-55d63 black-3c85d square-f6"
+              style="width: 49px; height: 49px"
+              id="f6-0ee5-e1e1-8ea9-f6dc-dd88-5684-00df-469b"
+              data-square="f6"
+            ></div>
+            <div
+              class="square-55d63 white-1e1d7 square-g6"
+              style="width: 49px; height: 49px"
+              id="g6-5281-7e16-97f0-44a9-9c3a-1c4a-f92e-c7d2"
+              data-square="g6"
+            ></div>
+            <div
+              class="square-55d63 black-3c85d square-h6"
+              style="width: 49px; height: 49px"
+              id="h6-1430-e438-4cc4-da3c-4355-d06a-f95e-b9d6"
+              data-square="h6"
+            ></div>
+            <div class="clearfix-7da63"></div>
+          </div>
+          <div class="row-5277c">
+            <div
+              class="square-55d63 black-3c85d square-a5"
+              style="width: 49px; height: 49px"
+              id="a5-794d-5bff-c5b5-33e0-f842-6d6c-47de-0bf6"
+              data-square="a5"
+            >
+              <div class="notation-322f9 numeric-fc462">5</div>
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-b5"
+              style="width: 49px; height: 49px"
+              id="b5-c772-22a2-429f-432b-a536-35ae-398c-a580"
+              data-square="b5"
+            ></div>
+            <div
+              class="square-55d63 black-3c85d square-c5"
+              style="width: 49px; height: 49px"
+              id="c5-3106-3b87-29e3-de43-74fb-e8c6-2a95-89d4"
+              data-square="c5"
+            ></div>
+            <div
+              class="square-55d63 white-1e1d7 square-d5"
+              style="width: 49px; height: 49px"
+              id="d5-2416-35d9-bcda-b8b6-e8d9-3b2a-8c79-8c3b"
+              data-square="d5"
+            ></div>
+            <div
+              class="square-55d63 black-3c85d square-e5"
+              style="width: 49px; height: 49px"
+              id="e5-28ca-3691-72a1-0ce3-0e84-cce0-5acb-05cb"
+              data-square="e5"
+            ></div>
+            <div
+              class="square-55d63 white-1e1d7 square-f5"
+              style="width: 49px; height: 49px"
+              id="f5-451f-4c25-6c5e-cd4e-81ad-5277-f7ee-519e"
+              data-square="f5"
+            ></div>
+            <div
+              class="square-55d63 black-3c85d square-g5"
+              style="width: 49px; height: 49px"
+              id="g5-0f41-fee8-786a-400c-3235-86da-3295-13d3"
+              data-square="g5"
+            ></div>
+            <div
+              class="square-55d63 white-1e1d7 square-h5"
+              style="width: 49px; height: 49px"
+              id="h5-c7b9-ad0c-b294-c9e4-2688-6501-efdc-3cab"
+              data-square="h5"
+            ></div>
+            <div class="clearfix-7da63"></div>
+          </div>
+          <div class="row-5277c">
+            <div
+              class="square-55d63 white-1e1d7 square-a4"
+              style="width: 49px; height: 49px"
+              id="a4-32b6-3852-fcbc-8ee1-b067-9627-04f4-5ce8"
+              data-square="a4"
+            >
+              <div class="notation-322f9 numeric-fc462">4</div>
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-b4"
+              style="width: 49px; height: 49px"
+              id="b4-5b23-a6a1-0a6d-0e08-c4b3-4b34-1b84-7551"
+              data-square="b4"
+            ></div>
+            <div
+              class="square-55d63 white-1e1d7 square-c4"
+              style="width: 49px; height: 49px"
+              id="c4-5c8a-3036-6645-e753-19a4-4de6-e1c2-a305"
+              data-square="c4"
+            ></div>
+            <div
+              class="square-55d63 black-3c85d square-d4"
+              style="width: 49px; height: 49px"
+              id="d4-e2d5-309b-cd82-93e0-c383-4836-7438-2ac4"
+              data-square="d4"
+            ></div>
+            <div
+              class="square-55d63 white-1e1d7 square-e4"
+              style="width: 49px; height: 49px"
+              id="e4-7983-4c40-31b3-392f-e0ef-3466-976a-7ba7"
+              data-square="e4"
+            ></div>
+            <div
+              class="square-55d63 black-3c85d square-f4"
+              style="width: 49px; height: 49px"
+              id="f4-350f-4c7e-8685-1a05-5a82-a5f8-db7e-357a"
+              data-square="f4"
+            ></div>
+            <div
+              class="square-55d63 white-1e1d7 square-g4"
+              style="width: 49px; height: 49px"
+              id="g4-825b-4689-70db-30b7-8a8e-9f89-59f2-94b5"
+              data-square="g4"
+            ></div>
+            <div
+              class="square-55d63 black-3c85d square-h4"
+              style="width: 49px; height: 49px"
+              id="h4-9f33-27dc-6dc3-02d0-08ca-fd6c-0ea8-b5e1"
+              data-square="h4"
+            ></div>
+            <div class="clearfix-7da63"></div>
+          </div>
+          <div class="row-5277c">
+            <div
+              class="square-55d63 black-3c85d square-a3"
+              style="width: 49px; height: 49px"
+              id="a3-fffa-0466-9eda-d3fe-d4c7-1b2c-bb53-1500"
+              data-square="a3"
+            >
+              <div class="notation-322f9 numeric-fc462">3</div>
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-b3"
+              style="width: 49px; height: 49px"
+              id="b3-09d5-d1ad-94cc-e0cf-be61-072a-3cc2-5d5c"
+              data-square="b3"
+            ></div>
+            <div
+              class="square-55d63 black-3c85d square-c3"
+              style="width: 49px; height: 49px"
+              id="c3-97e2-1ad1-1ca8-3418-6ff5-1e8f-27c9-649c"
+              data-square="c3"
+            ></div>
+            <div
+              class="square-55d63 white-1e1d7 square-d3"
+              style="width: 49px; height: 49px"
+              id="d3-2fb0-4450-e573-57bd-db59-a65f-c20c-fee8"
+              data-square="d3"
+            ></div>
+            <div
+              class="square-55d63 black-3c85d square-e3"
+              style="width: 49px; height: 49px"
+              id="e3-95e8-b0d1-55e8-65f5-d335-4502-7e06-b9fc"
+              data-square="e3"
+            ></div>
+            <div
+              class="square-55d63 white-1e1d7 square-f3"
+              style="width: 49px; height: 49px"
+              id="f3-f46a-fa6b-926c-3987-3387-eff5-1902-6c30"
+              data-square="f3"
+            ></div>
+            <div
+              class="square-55d63 black-3c85d square-g3"
+              style="width: 49px; height: 49px"
+              id="g3-5c71-0723-adff-ee47-1648-0137-9d55-88ae"
+              data-square="g3"
+            ></div>
+            <div
+              class="square-55d63 white-1e1d7 square-h3"
+              style="width: 49px; height: 49px"
+              id="h3-ec29-f678-58d1-50e1-f82c-ae57-9dee-5acf"
+              data-square="h3"
+            ></div>
+            <div class="clearfix-7da63"></div>
+          </div>
+          <div class="row-5277c">
+            <div
+              class="square-55d63 white-1e1d7 square-a2"
+              style="width: 49px; height: 49px"
+              id="a2-4636-a194-fdc9-47e5-bb78-54ed-d84c-1b80"
+              data-square="a2"
+            >
+              <div class="notation-322f9 numeric-fc462">2</div>
+              <img
+                src="img/chesspieces/wikipedia/wP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-b2"
+              style="width: 49px; height: 49px"
+              id="b2-573f-7d77-f312-8280-e4bf-9109-9a34-a526"
+              data-square="b2"
+            >
+              <img
+                src="img/chesspieces/wikipedia/wP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-c2"
+              style="width: 49px; height: 49px"
+              id="c2-69d6-f33d-0401-77e5-9406-0148-e3d8-cac2"
+              data-square="c2"
+            >
+              <img
+                src="img/chesspieces/wikipedia/wP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-d2"
+              style="width: 49px; height: 49px"
+              id="d2-7b7e-90c5-0465-47ef-a000-dba4-2add-d462"
+              data-square="d2"
+            >
+              <img
+                src="img/chesspieces/wikipedia/wP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-e2"
+              style="width: 49px; height: 49px"
+              id="e2-6da4-22d2-24ec-dd48-0cb7-e032-8bb0-ae59"
+              data-square="e2"
+            >
+              <img
+                src="img/chesspieces/wikipedia/wP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-f2"
+              style="width: 49px; height: 49px"
+              id="f2-b851-8fe4-c326-31e2-6988-6746-63ae-53ff"
+              data-square="f2"
+            >
+              <img
+                src="img/chesspieces/wikipedia/wP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-g2"
+              style="width: 49px; height: 49px"
+              id="g2-81b4-8073-6b52-b0fa-94a4-4337-9a7b-a497"
+              data-square="g2"
+            >
+              <img
+                src="img/chesspieces/wikipedia/wP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-h2"
+              style="width: 49px; height: 49px"
+              id="h2-86bb-4b73-ffe3-4ce2-d0dc-e855-03a8-4a77"
+              data-square="h2"
+            >
+              <img
+                src="img/chesspieces/wikipedia/wP.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wP"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div class="clearfix-7da63"></div>
+          </div>
+          <div class="row-5277c">
+            <div
+              class="square-55d63 black-3c85d square-a1"
+              style="width: 49px; height: 49px"
+              id="a1-9d17-fbe0-a399-cc26-f316-9b94-8809-e944"
+              data-square="a1"
+            >
+              <div class="notation-322f9 alpha-d2270">a</div>
+              <div class="notation-322f9 numeric-fc462">1</div>
+              <img
+                src="img/chesspieces/wikipedia/wR.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wR"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-b1"
+              style="width: 49px; height: 49px"
+              id="b1-d021-ffe7-0768-5b17-65b3-6a8b-ed04-ce02"
+              data-square="b1"
+            >
+              <div class="notation-322f9 alpha-d2270">b</div>
+              <img
+                src="img/chesspieces/wikipedia/wN.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wN"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-c1"
+              style="width: 49px; height: 49px"
+              id="c1-9a90-062b-dc32-fb67-20be-9387-d947-be48"
+              data-square="c1"
+            >
+              <div class="notation-322f9 alpha-d2270">c</div>
+              <img
+                src="img/chesspieces/wikipedia/wB.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wB"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-d1"
+              style="width: 49px; height: 49px"
+              id="d1-f741-7cfe-be9d-1054-e736-6515-5bce-be9b"
+              data-square="d1"
+            >
+              <div class="notation-322f9 alpha-d2270">d</div>
+              <img
+                src="img/chesspieces/wikipedia/wQ.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wQ"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-e1"
+              style="width: 49px; height: 49px"
+              id="e1-2c78-25d8-5e33-c79c-cecb-597d-348d-fae5"
+              data-square="e1"
+            >
+              <div class="notation-322f9 alpha-d2270">e</div>
+              <img
+                src="img/chesspieces/wikipedia/wK.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wK"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-f1"
+              style="width: 49px; height: 49px"
+              id="f1-acfb-1853-0193-7d86-7aac-d831-61c3-717a"
+              data-square="f1"
+            >
+              <div class="notation-322f9 alpha-d2270">f</div>
+              <img
+                src="img/chesspieces/wikipedia/wB.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wB"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 black-3c85d square-g1"
+              style="width: 49px; height: 49px"
+              id="g1-0c52-4d74-1637-a22f-af63-227a-18f4-5cbd"
+              data-square="g1"
+            >
+              <div class="notation-322f9 alpha-d2270">g</div>
+              <img
+                src="img/chesspieces/wikipedia/wN.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wN"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div
+              class="square-55d63 white-1e1d7 square-h1"
+              style="width: 49px; height: 49px"
+              id="h1-48d0-a02e-e318-1453-8b9a-c00b-be84-a4ce"
+              data-square="h1"
+            >
+              <div class="notation-322f9 alpha-d2270">h</div>
+              <img
+                src="img/chesspieces/wikipedia/wR.png"
+                alt=""
+                class="piece-417db"
+                data-piece="wR"
+                style="width: 49px; height: 49px"
+              />
+            </div>
+            <div class="clearfix-7da63"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="promotion-dialog">
+      <ol id="promote-to">
+        <li class="ui-state-default">
+          <span class="piece-name">q</span
+          ><img class="promotion-piece-q promotion-piece" />
+        </li>
+        <li class="ui-state-default">
+          <span class="piece-name">r</span
+          ><img class="promotion-piece-r promotion-piece" />
+        </li>
+        <li class="ui-state-default">
+          <span class="piece-name">n</span
+          ><img class="promotion-piece-n promotion-piece" />
+        </li>
+        <li class="ui-state-default">
+          <span class="piece-name">b</span
+          ><img class="promotion-piece-b promotion-piece" />
+        </li>
+      </ol>
+    </div>
+    <div>
+      <button class="game ui black button" id="arrange">Arrange</button>
+      <button class="game ui black button" id="startPlay">Start Play</button>
+      <button
+        class="game ui black button"
+        id="clearEditor"
+        style="display: none"
+      >
+        Clear Board
+      </button>
+      <div id="trn" style="font-size: x-large; display: none">TURN</div>
+    </div>
+    <!--- End Example HTML -------------------------------------------------------->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script
+      src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+      integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js"
+      integrity="sha384-s3XgLpvmHyscVpijnseAmye819Ee3yaGa8NxstkJVyA6nuDFjt59u1QvuEl/mecz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js" type="module"></script>
+
+    <img
+      src="img/chesspieces/wikipedia/wP.png"
+      id="3e06-b77b-7eaf-33fb-9649-caf9-a984-65f8"
+      alt=""
+      class="piece-417db"
+      data-piece="wP"
+      style="width: 49px; height: 49px; display: none"
+    />
+  </body>
+</html>

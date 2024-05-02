@@ -1,0 +1,6 @@
+Boom : 
+1.	IF move not null -> game.move()
+
+IF move null:
+	If move then Check ?
+	

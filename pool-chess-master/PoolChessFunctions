@@ -1,0 +1,29 @@
+let sourcePiece = editorGame.get(source)
+let targetPiece = editorGame.get(target)
+
+function pushPieceBishop(source, target){
+    let alphas = source[0]
+    let betas = source[1]
+    
+    let alphat = target[0]
+    let betat = target[1] 
+    
+
+    if(alphas < alphat){ 
+        if(betas < betat) { //UPPER RIGHT
+            
+        }
+        else{
+
+        }
+    }
+    else{
+        if(betas < betat) { //LOWER RIGHT
+            
+        }
+        else{
+
+        }
+    }
+
+}
